@@ -1,63 +1,69 @@
-/* 1. Capa principal: Centrada, gris claro, bordes redondeados y sombra */
+/* Estil general per centrar la targeta a la pantalla */
 body {
-    margin: 0;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f4f4f4;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
 }
 
+/* Dissenya la capa principal (.pokemon-card) */
 .pokemon-card {
     background-color: #ffffff;
-    border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
     width: 300px;
     text-align: center;
 }
 
-/* 2. Estilo de la imagen */
+/* Estil de la imatge (.pokemon-image) */
 .pokemon-image {
     max-width: 150px;
-    border-radius: 50%;
-    border: 5px solid #e0e0e0;
-    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
-/* 3. Información del Pokémon */
+/* Informació del Pokémon (.pokemon-info) */
 .pokemon-info {
-    background-color: #e8f5e9; /* Verde muy clarito */
-    border-radius: 15px;
+    background-color: #e8f5e9; /* Verd clar */
+    border-radius: 10px;
     padding: 15px;
+    margin-top: 10px;
 }
 
-/* 4. Estilo del nombre */
+/* Estil del nom (.pokemon-name) */
 .pokemon-name {
+    color: #2e7d32; /* Verd fosc per contrast */
     font-size: 24px;
-    color: #2e7d32;
-    margin: 0 0 10px 0;
+    margin: 10px 0;
     text-transform: uppercase;
 }
 
-/* 5. Estilo de los tipos */
+/* Estil del tipus (.pokemon-type) */
 .pokemon-type {
     display: inline-block;
-    padding: 5px 12px;
-    border-radius: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
     margin: 5px;
     font-weight: bold;
-    font-size: 12px;
 }
 
-.plant { background-color: #4caf50; color: white; }
-.poison { background-color: #9c27b0; color: white; }
+.plant {
+    background-color: #4caf50; /* Verd */
+}
 
-/* 6. Estilo de la descripción */
+.poison {
+    background-color: #9c27b0; /* Morat */
+}
+
+/* Estil de la descripció (.pokemon-description) */
 .pokemon-description {
     font-size: 14px;
-    color: #555;
+    color: #555; /* Gris clar */
+    margin-top: 10px;
     line-height: 1.5;
-    margin-top: 15px;
 }
