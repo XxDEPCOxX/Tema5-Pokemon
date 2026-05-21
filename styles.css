@@ -1,101 +1,72 @@
-/* Reinici bàsic */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Pantalla */
+/* Estilo general de la página */
 body {
-    height: 100vh;
+    background-color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #d6d6d6;
-    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
 }
 
-/* Carta Pokémon estil real */
+/* Contenedor principal de la carta */
 .pokemon-card {
-    width: 360px;
-    background: linear-gradient(to bottom, #ffe066, #f5c542);
-    border-radius: 25px;
-    padding: 18px;
-    border: 10px solid #f7d354;
-    box-shadow: 
-        0 10px 25px rgba(0,0,0,0.35),
-        inset 0 0 10px rgba(255,255,255,0.4);
-    position: relative;
-}
-
-/* Marc interior */
-.pokemon-card::before {
-    content: "";
-    position: absolute;
-    inset: 8px;
-    border-radius: 18px;
-    border: 3px solid rgba(255,255,255,0.5);
-    pointer-events: none;
-}
-
-/* Imatge */
-.pokemon-image {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-    border: 5px solid #d4af37;
-    background-color: #c8f7c5;
-    margin-bottom: 15px;
-    box-shadow: inset 0 0 8px rgba(0,0,0,0.3);
-}
-
-/* Zona informació */
-.pokemon-info {
-    background: rgba(255,255,255,0.25);
+    background-color: #c6d768; /* Color base verde tipo planta */
+    border: 12px solid #a0a0a0; /* Borde gris metálico */
     border-radius: 15px;
     padding: 15px;
-    border: 2px solid rgba(0,0,0,0.15);
+    width: 350px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    font-family: 'Arial', sans-serif;
 }
 
-/* Nom */
-.pokemon-name {
-    font-size: 2.2rem;
+/* Cabecera: Nombre y PS */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-weight: bold;
-    color: #1e272e;
-    text-shadow: 2px 2px 0 rgba(255,255,255,0.7);
-    margin-bottom: 12px;
-    font-family: Verdana, sans-serif;
+    font-size: 22px;
+    margin-bottom: 10px;
 }
 
-/* Tipus */
-.pokemon-type {
-    display: inline-block;
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    font-weight: bold;
-    color: white;
-    margin-right: 8px;
-    margin-bottom: 12px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+/* Área de imagen */
+.image-container {
+    background-color: #fff;
+    border: 4px solid #777;
+    padding: 5px;
+    border-radius: 5px;
 }
 
-/* Planta */
-.plant {
-    background: #44bd32;
+.pokemon-image {
+    width: 100%;
+    display: block;
 }
 
-/* Verí */
-.poison {
-    background: #8e44ad;
-}
-
-/* Descripció */
-.pokemon-description {
-    font-size: 0.95rem;
-    color: #2f3640;
-    line-height: 1.6;
+/* Área de ataques y texto */
+.pokemon-info {
+    background-color: #e0eec0;
+    padding: 10px;
     margin-top: 10px;
-    text-align: justify;
+    border: 2px solid #999;
+    border-radius: 5px;
+}
+
+.attack-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.attack-description {
+    font-size: 13px;
+    margin-top: 5px;
+    color: #333;
+}
+
+/* Pie de carta */
+.card-footer {
+    font-size: 10px;
+    margin-top: 15px;
+    border-top: 1px solid #999;
+    padding-top: 5px;
+    text-align: center;
 }
