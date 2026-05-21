@@ -5,74 +5,97 @@
     box-sizing: border-box;
 }
 
-/* Cos de la pàgina */
+/* Pantalla */
 body {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #dfe6e9;
+    background: #d6d6d6;
     font-family: Arial, sans-serif;
 }
 
-/* Tarjeta principal */
+/* Carta Pokémon estil real */
 .pokemon-card {
-    background-color: #f5f6fa;
-    border-radius: 20px;
-    padding: 20px;
-    width: 320px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    width: 360px;
+    background: linear-gradient(to bottom, #ffe066, #f5c542);
+    border-radius: 25px;
+    padding: 18px;
+    border: 10px solid #f7d354;
+    box-shadow: 
+        0 10px 25px rgba(0,0,0,0.35),
+        inset 0 0 10px rgba(255,255,255,0.4);
+    position: relative;
 }
 
-/* Imatge del Pokémon */
+/* Marc interior */
+.pokemon-card::before {
+    content: "";
+    position: absolute;
+    inset: 8px;
+    border-radius: 18px;
+    border: 3px solid rgba(255,255,255,0.5);
+    pointer-events: none;
+}
+
+/* Imatge */
 .pokemon-image {
     width: 100%;
-    max-width: 250px;
-    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 5px solid #d4af37;
+    background-color: #c8f7c5;
     margin-bottom: 15px;
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.3);
 }
 
-/* Informació */
+/* Zona informació */
 .pokemon-info {
-    background-color: #c7f5c4;
+    background: rgba(255,255,255,0.25);
     border-radius: 15px;
     padding: 15px;
+    border: 2px solid rgba(0,0,0,0.15);
 }
 
-/* Nom del Pokémon */
+/* Nom */
 .pokemon-name {
-    font-size: 32px;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #1e272e;
+    text-shadow: 2px 2px 0 rgba(255,255,255,0.7);
+    margin-bottom: 12px;
     font-family: Verdana, sans-serif;
-    color: #2f3640;
-    margin-bottom: 10px;
 }
 
-/* Tipus generals */
+/* Tipus */
 .pokemon-type {
     display: inline-block;
-    padding: 6px 12px;
-    border-radius: 12px;
-    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
     font-weight: bold;
-    margin-bottom: 10px;
-    margin-right: 5px;
+    color: white;
+    margin-right: 8px;
+    margin-bottom: 12px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
 }
 
-/* Tipus Planta */
+/* Planta */
 .plant {
-    background-color: #44bd32;
+    background: #44bd32;
 }
 
-/* Tipus Verí */
+/* Verí */
 .poison {
-    background-color: #8e44ad;
+    background: #8e44ad;
 }
 
 /* Descripció */
 .pokemon-description {
-    font-size: 14px;
-    color: #636e72;
+    font-size: 0.95rem;
+    color: #2f3640;
+    line-height: 1.6;
     margin-top: 10px;
-    line-height: 1.5;
+    text-align: justify;
 }
