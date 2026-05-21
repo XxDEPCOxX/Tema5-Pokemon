@@ -1,22 +1,63 @@
-<!DOCTYPE html>
-<html lang="ca">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarjeta de Pokémon</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="pokemon-card">
-        <img class="pokemon-image" src="Descargas/Diego-Perez/bulbasaur.png" alt="Imatge del Pokémon">
-        <div class="pokemon-info">
-            <h2 class="pokemon-name">Bulbasaur</h2>
-            <p class="pokemon-type plant">Planta</p>
-            <p class="pokemon-type poison">Verí</p>
-            <p class="pokemon-description">
-                Bulbasaur és un Pokémon de tipus Planta i Verí. És fàcil distingir-lo per la llavor que té a l'esquena, que creix a mesura que ell ho fa.
-            </p>
-        </div>
-    </div>
-</body>
-</html>
+/* 1. Capa principal: Centrada, gris claro, bordes redondeados y sombra */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pokemon-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    padding: 25px;
+    width: 300px;
+    text-align: center;
+}
+
+/* 2. Estilo de la imagen */
+.pokemon-image {
+    max-width: 150px;
+    border-radius: 50%;
+    border: 5px solid #e0e0e0;
+    margin-bottom: 20px;
+}
+
+/* 3. Información del Pokémon */
+.pokemon-info {
+    background-color: #e8f5e9; /* Verde muy clarito */
+    border-radius: 15px;
+    padding: 15px;
+}
+
+/* 4. Estilo del nombre */
+.pokemon-name {
+    font-size: 24px;
+    color: #2e7d32;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+}
+
+/* 5. Estilo de los tipos */
+.pokemon-type {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.plant { background-color: #4caf50; color: white; }
+.poison { background-color: #9c27b0; color: white; }
+
+/* 6. Estilo de la descripción */
+.pokemon-description {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    margin-top: 15px;
+}
