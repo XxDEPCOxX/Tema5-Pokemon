@@ -10,14 +10,15 @@ body {
 
 /* Contenedor principal de la carta */
 .pokemon-card {
-    background-color: #c6d768; /* Color base verde tipo planta */
-    border: 12px solid #a0a0a0; /* Borde gris metálico */
+    background-color: #a8d08d; /* Este es un verde tipo Planta más real */
+    border: 12px solid #76a35d; /* Borde verde oscuro para contrastar */
     border-radius: 15px;
     padding: 15px;
     width: 350px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
     font-family: 'Arial', sans-serif;
 }
+
 
 /* Cabecera: Nombre y PS */
 .card-header {
