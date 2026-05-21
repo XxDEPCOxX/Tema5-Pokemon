@@ -1,4 +1,4 @@
-/* Estil general per centrar la targeta a la pantalla */
+/* Estil general */
 body {
     display: flex;
     justify-content: center;
@@ -9,7 +9,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Dissenya la capa principal (.pokemon-card) */
+/* Targeta principal */
 .pokemon-card {
     background-color: #ffffff;
     border-radius: 15px;
@@ -19,30 +19,33 @@ body {
     text-align: center;
 }
 
-/* Estil de la imatge (.pokemon-image) */
+/* Imatge */
 .pokemon-image {
     max-width: 150px;
     border-radius: 10px;
     margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Informació del Pokémon (.pokemon-info) */
+/* Informació */
 .pokemon-info {
-    background-color: #e8f5e9; /* Verd clar */
+    background-color: #e8f5e9;
     border-radius: 10px;
     padding: 15px;
     margin-top: 10px;
 }
 
-/* Estil del nom (.pokemon-name) */
+/* Nom */
 .pokemon-name {
-    color: #2e7d32; /* Verd fosc per contrast */
+    color: #2e7d32;
     font-size: 24px;
     margin: 10px 0;
     text-transform: uppercase;
 }
 
-/* Estil del tipus (.pokemon-type) */
+/* Tipus */
 .pokemon-type {
     display: inline-block;
     padding: 5px 10px;
@@ -53,17 +56,17 @@ body {
 }
 
 .plant {
-    background-color: #4caf50; /* Verd */
+    background-color: #4caf50;
 }
 
 .poison {
-    background-color: #9c27b0; /* Morat */
+    background-color: #9c27b0;
 }
 
-/* Estil de la descripció (.pokemon-description) */
+/* Descripció */
 .pokemon-description {
     font-size: 14px;
-    color: #555; /* Gris clar */
+    color: #555;
     margin-top: 10px;
     line-height: 1.5;
 }
