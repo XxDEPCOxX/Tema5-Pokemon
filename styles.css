@@ -1,72 +1,78 @@
-/* Estil general */
+/* Reinici bàsic */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cos de la pàgina */
 body {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
+    background-color: #dfe6e9;
     font-family: Arial, sans-serif;
 }
 
-/* Targeta principal */
+/* Tarjeta principal */
 .pokemon-card {
-    background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #f5f6fa;
+    border-radius: 20px;
     padding: 20px;
-    width: 300px;
+    width: 320px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
-/* Imatge */
+/* Imatge del Pokémon */
 .pokemon-image {
-    max-width: 150px;
-    border-radius: 10px;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 15px;
     margin-bottom: 15px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* Informació */
 .pokemon-info {
-    background-color: #e8f5e9;
-    border-radius: 10px;
+    background-color: #c7f5c4;
+    border-radius: 15px;
     padding: 15px;
-    margin-top: 10px;
 }
 
-/* Nom */
+/* Nom del Pokémon */
 .pokemon-name {
-    color: #2e7d32;
-    font-size: 24px;
-    margin: 10px 0;
-    text-transform: uppercase;
+    font-size: 32px;
+    font-family: Verdana, sans-serif;
+    color: #2f3640;
+    margin-bottom: 10px;
 }
 
-/* Tipus */
+/* Tipus generals */
 .pokemon-type {
     display: inline-block;
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 6px 12px;
+    border-radius: 12px;
     color: white;
-    margin: 5px;
     font-weight: bold;
+    margin-bottom: 10px;
+    margin-right: 5px;
 }
 
+/* Tipus Planta */
 .plant {
-    background-color: #4caf50;
+    background-color: #44bd32;
 }
 
+/* Tipus Verí */
 .poison {
-    background-color: #9c27b0;
+    background-color: #8e44ad;
 }
 
 /* Descripció */
 .pokemon-description {
     font-size: 14px;
-    color: #555;
+    color: #636e72;
     margin-top: 10px;
     line-height: 1.5;
 }
